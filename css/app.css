@@ -15,3 +15,7 @@
     color: black;
     padding: 9px 30px
 }
+
+.row {
+    width: 100%;
+}
