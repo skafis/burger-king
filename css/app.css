@@ -11,14 +11,23 @@
     -moz-transition: height 0.5s linear;
     transition: height 0.5s linear;
 }
-
-.item {
+.navigation a {
+  color: #fff;
+  font-size:1.3em;
+  line-height: 1.25em;
+  text-decoration: none;
+  opacity: 0.5;
+  font-weight: bold;
+}
+/*
+item {
     border: solid;
     background-color: white;
     border-radius: 45%;
     color: black;
     padding: 9px 30px
 }
+*/
 
 .navigation:hover{
     height: 60px;
