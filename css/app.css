@@ -22,6 +22,14 @@ label[for="nav-trigger"]{
     background-size: contain;
 }
 
+.nav-trigger:checked + label{
+    left: 215px;
+}
+
+.nav-trigger:checked ~ .main {
+    left: 200px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
 item {
     border: solid;
     background-color: white;
