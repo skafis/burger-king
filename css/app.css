@@ -2,10 +2,14 @@
 .navigation {
     background-color: black;
     color: white;
+    padding: 10px 0 10px 0;
     text-align: center;
-    align-items: center;
     height: 70px;
     font-size: 40px;
+    overflow: hidden;
+    -webkit-transition: height 0.5s linear;
+    -moz-transition: height 0.5s linear;
+    transition: height 0.5s linear;
 }
 
 .item {
