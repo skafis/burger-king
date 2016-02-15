@@ -19,6 +19,9 @@
   opacity: 0.5;
   font-weight: bold;
 }
+.navigation a:hover{
+    opacity: 1;
+}
 /*
 item {
     border: solid;
