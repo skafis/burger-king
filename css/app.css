@@ -6,7 +6,10 @@
     height: 100%;
     position: fixed;
 }
-
+.nav-trigger{
+    position: absolute;
+    clip: rect(0,0,0,0,);
+}
 item {
     border: solid;
     background-color: white;
