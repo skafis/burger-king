@@ -1,43 +1,12 @@
-
-.navigation {
-    background-color: black;
-    color: white;
-    padding: 10px 0 10px 0;
-    text-align: center;
-    height: 70px;
-    font-size: 40px;
-    overflow: hidden;
-    -webkit-transition: height 0.5s linear;
-    -moz-transition: height 0.5s linear;
-    transition: height 0.5s linear;
-}
-.navigation a {
-  color: #fff;
-  font-size:1.3em;
-  line-height: 1.25em;
-  text-decoration: none;
-  opacity: 0.5;
-  font-weight: bold;
-}
-.navigation a:hover{
-    opacity: 1;
-}
+/*stylethe navigation items*/
 #hidden{
-    display: block;
+    list-style: none;
+    background: #111;
     width: 100%;
-    padding: 8px 0;
-    text-align: center;
-    text-shadow: 1px 1px 0 #444;
+    height: 100%;
+    position: fixed;
 }
 
-#hidden a{
-    color: #fff;
-    font-size: 1.0em;
-    text-decoration: none;
-    opacity: 0.5;
-    text-shadow: none;
-}
-/*
 item {
     border: solid;
     background-color: white;
@@ -45,11 +14,7 @@ item {
     color: black;
     padding: 9px 30px
 }
-*/
 
-.navigation:hover{
-    height: 60px;
-}
 
 .row {
     width: 100%;
