@@ -22,6 +22,21 @@
 .navigation a:hover{
     opacity: 1;
 }
+#hidden{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    text-shadow: 1px 1px 0 #444;
+}
+
+#hidden a{
+    color: #fff;
+    font-size: 1.0em;
+    text-decoration: none;
+    opacity: 0.5;
+    text-shadow: none;
+}
 /*
 item {
     border: solid;
@@ -34,13 +49,6 @@ item {
 
 .navigation:hover{
     height: 60px;
-}
-#hidden{
-    display: block;
-    width: 100%;
-    padding: 8px 0;
-    text-align: center;
-    text-shadow: 1px 1px 0 #444;
 }
 
 .row {
