@@ -23,8 +23,8 @@
 slide show and time
 .............................................................*/
 .slideshow{
-    width: 95%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1700px;
     margin:0 auto;
     position: relative;
     overflow: hidden;
@@ -36,6 +36,7 @@ slide show and time
     left: -100%;
     width: 100%;
     display: block;
+    height: 800px;
 }
 .slideshow img:first-child {
     position: relative
