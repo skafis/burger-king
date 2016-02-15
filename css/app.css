@@ -16,6 +16,17 @@
     padding: 9px 30px
 }
 
+.navigation:hover{
+    height: 60px;
+}
+#hidden{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    text-shadow: 1px 1px 0 #444;
+}
+
 .row {
     width: 100%;
 }
