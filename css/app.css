@@ -1,3 +1,10 @@
+.icon {
+     top:0;
+    left:0;
+    z-index:2;
+    position:absolute;">
+}
+
 .slideshow {
     width:95%;
     max-width:13s00px;
@@ -58,9 +65,3 @@
 13.5%, 100% {left:100%;}
 }
 
-.icon {
-     top:0;
-    left:0;
-    z-index:2;
-    position:absolute;">
-}
