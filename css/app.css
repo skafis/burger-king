@@ -1,10 +1,10 @@
 .slideshow {
     width:95%;
-    max-width:1300px;
+    max-width:13s00px;
     margin:0 auto;
     position:relative;
     overflow:hidden;
-    border:1px solid #000;
+/*    border: 1px solid #000;*/
 }
 
 .slideshow img {
@@ -56,4 +56,11 @@
 0% {left:-100%;}
 1%, 12.5% {left:0;}
 13.5%, 100% {left:100%;}
+}
+
+.icon {
+     top:0;
+    left:0;
+    z-index:2;
+    position:absolute;">
 }
