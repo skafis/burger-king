@@ -1,152 +1,59 @@
-html{
-    position: relative;
-}
-/*stylethe navigation items*/
-.navigation{
-    list-style: none;
-    background: #fff;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-}
-nav-item{
-    width: 200px;
-    border-top: 1px solid #111;
-    border-bottom: 1px solid #000;
-}
-nav-item a{
-    display: block;
-    padding: 1em;
-    transition: color 0.2s, background 0.5s;
-}
-
-.nav-item a:hover {
-  color: #c74438;
-  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
-}
-
-.nav-trigger{
-    position: absolute;
-    clip: rect(0,0,0,0,);
-}
-label[for="nav-trigger"]{
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    z-index: 2;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
-    background-size: contain;
-}
-
-.nav-trigger:checked + label{
-    left: 215px;
-}
-
-.nav-trigger:checked ~ .main {
-    left: 200px;
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
-}
-.nav-trigger + label, .main{
-    transition: left 0.2s;
-}
-body{
-    overflow-x: hidden;
-}
-/*
-item {
-    border: solid;
-    background-color: white;
-    border-radius: 45%;
-    color: black;
-    padding: 9px 30px
-}
-*/
-
-/* Micro reset */
-*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
-html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif;
-.row {
-    width: 100%;
-}
-/*...........................................................
-slide show and time
-.............................................................*/
-.slideshow{
-    width: 100%;
-    max-width: 1700px;
+.slideshow {
+    width:95%;
+    max-width:1300px;
     margin:0 auto;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #000;
+    position:relative;
+    overflow:hidden;
+    border:1px solid #000;
 }
-.slideshow img{
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    display: block;
-    height: 800px;
+
+.slideshow img {
+    position:absolute;
+    top:0; left:-100%;
+    width:100%;
+    display:block;
 }
+
 .slideshow img:first-child {
-    position: relative
+    position:relative;
 }
-.slideshow img:nth-of-type(1){
+
+/*time and slideshow transition*/
+.slideshow img:nth-of-type(1) {
     -webkit-animation:autoplay 48s linear infinite 0s;
-    animation:autoplay 48s linear infinite 0s
+    animation:autoplay 48s linear infinite 0s;
 }
 
-.slideshow img:nth-of-type(2){
-    -webkit-animation:autoplay 48s linear infinite 6s;
-    animation:autoplay 48s linear infinite 6s;
+.slideshow img:nth-of-type(2) {
+    -webkit-animation:autoplay 48s linear infinite 6s; animation:autoplay 48s linear infinite 6s;
+}
+.slideshow img:nth-of-type(3) {
+    -webkit-animation:autoplay 48s linear infinite 12s; animation:autoplay 48s linear infinite 12s;
+}
+.slideshow img:nth-of-type(4) {
+    -webkit-animation:autoplay 48s linear infinite 18s; animation:autoplay 48s linear infinite 18s;
+}
+.slideshow img:nth-of-type(5) {
+    -webkit-animation:autoplay 48s linear infinite 24s; animation:autoplay 48s linear infinite 24s;
+}
+.slideshow img:nth-of-type(6) {
+    -webkit-animation:autoplay 48s linear infinite 30s; animation:autoplay 48s linear infinite 30s;
+}
+.slideshow img:nth-of-type(7) {
+    -webkit-animation:autoplay 48s linear infinite 36s; animation:autoplay 48s linear infinite 36s;
+}
+.slideshow img:nth-of-type(8) {
+    -webkit-animation:autoplay 48s linear infinite 42s; animation:autoplay 48s linear infinite 42s;
 }
 
-.slideshow img:nth-of-type(3){
-    -webkit-animation:autoplay 48s linear infinite 12s;
-    animation:autoplay 48s linear infinite 12s;
-}
-
-.slideshow img:nth-of-type(4){
-    -webkit-animation:autoplay 48s linear infinite 18s;
-    animation:autoplay 48s linear infinite 18s;
-}
-
-.slideshow img:nth-of-type(5){
-    -webkit-animation:autoplay 48s linear infinite 24s;
-    animation:autoplay 48s linear infinite 24s;
-}
-
-.slideshow img:nth-of-type(6){
-    -webkit-animation:autoplay 48s linear infinite 30s;
-    animation:autoplay 48s linear infinite 30s;
-}
-
-.slideshow img:nth-of-type(7){
-    -webkit-animation:autoplay 48s linear infinite 36s;
-    animation:autoplay 48s linear infinite 36s;
-}
-
-.slideshow img:nth-of-type(8){
-    -webkit-animation:autoplay 48s linear infinite 42s;
-    animation:autoplay 48s linear infinite 42s;
-}
-
-/*image transition timefrom one image to another*/
 @keyframes autoplay {
-    0% {left: -100%;}
-    1%, 12.5% {left:0;}
-    13.5%, 100% {left: 100%}
+0% {left:-100%;}
+1%, 12.5% {left:0;}
+13.5%, 100% {left:100%;}
 }
 
 @-webkit-keyframes autoplay {
-    0% {left: -100%;}
-    1%, 12.5% {left:0;}
-    13.5%, 100% {left: 100%}
+0% {left:-100%;}
+1%, 12.5% {left:0;}
+13.5%, 100% {left:100%;}
 }
