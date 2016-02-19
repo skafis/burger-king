@@ -100,3 +100,7 @@
 footer {
     background: black;
 }
+footer img{
+    height: 100px;
+    width: 100px;
+}
