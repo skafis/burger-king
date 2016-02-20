@@ -3,70 +3,10 @@ html, body{
    height: 100%;
 }
 
-.container {
-/*    position: relative;*/
-    margin: auto;
-    background-color: beige;
-    background-size: cover;
-    background-position: center;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    cursor: pointer;
-    overflow: hidden;
-/*    z-index: 3;*/
+.container,
+.overlay:before {
+    /*styling navigation*/
 
-}
-
-.container .overlay{
-  background: rgba(0,0,0,.5);
-  position: absolute;
-  margin: auto;
-    -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  opacity: 2;
-    -webkit-transition: .3s ease;
-  transition: .3s ease;
-}
-
-.container:hover .overlay{
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-}
-
-.overlay span{
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  position: absolute;
-  margin: auto;
-  width: 160px;
-  height: 30px;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-}
-
-.container:hover .overlay span{
-  opacity: 1;
-  -webkit-transition: 1.3s ease;
-  transition: 1.3s ease;
-}
-
-.icon {
-     top:0;
-    left:0;
-    z-index:2;
-    position:absolute;
-    margin: 20px;
-    padding: 5px
-}
-/*styling navigation*/
 .navigation {
     list-style: none;
     background: #111;
@@ -79,7 +19,7 @@ html, body{
     left: 0;
     z-index: 0;
 }
-.containe{
+.container{
     width: inherit;
     height: inherit;
 }
@@ -162,6 +102,46 @@ footer img{
     height: 100px;
     width: 100px;
     padding: 20px;
+}
+
+}
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay {
+  max-height: 720px;
+  margin: 0 auto;
+  max-width: 1500px;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  color: white;
+  font-family: 'Lato';
+  position: relative;
+  text-align: center;
+  z-index: ;
+  &:before {
+    content: '';
+    filter: blur(20px);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.icon {
+     top:0;
+    left:0;
+    z-index:2;
+    position:absolute;
+    margin: 20px;
+    padding: 5px
 }
 
 .price {
