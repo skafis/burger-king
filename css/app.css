@@ -52,6 +52,12 @@ html, body{
   opacity: 0;
 }
 
+.container:hover .overlay span{
+  opacity: 1;
+  -webkit-transition: 1.3s ease;
+  transition: 1.3s ease;
+}
+
 .icon {
      top:0;
     left:0;
